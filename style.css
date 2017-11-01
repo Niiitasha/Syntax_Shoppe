@@ -1,0 +1,22 @@
+
+h1 {
+  text-align: center;
+}
+
+#shoppe {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: space-around;
+}
+
+
+
+.images {
+  height: 350px;
+  width: 250px;
+  background-color: blue;
+  border-style: solid;
+  margin-top: 25px;
+}
