@@ -27,9 +27,9 @@ function showCart() {
 }
 
 function popup(shirt) {
-
+$("#" + shirt).show();
 }
 
-function exitPopup() {
+function exitPopup(popup) {
 
 }
