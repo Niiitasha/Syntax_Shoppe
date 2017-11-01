@@ -1,13 +1,5 @@
 $(document).ready(function() {
-
-
-
-
-
-
-});
-
-
+var item = 0;
 function showHome() {
 $(".home").show();
 $(".shoppe").hide();
@@ -27,9 +19,16 @@ function showCart() {
 }
 
 function popup(shirt) {
-$("#" + shirt).show();
+$("#i" + shirt).show();
+item = shirt;
+}
+
+function addToCart() {
+
 }
 
 function exitPopup(popup) {
 
 }
+
+});
