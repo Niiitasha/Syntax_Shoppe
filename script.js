@@ -1,5 +1,13 @@
 $(document).ready(function() {
-var item = 0;
+
+var items = [{
+  name: "none",
+  category: "none",
+  description: "none",
+  price: 0,
+  quantity: 0
+}]
+
 function showHome() {
 $(".home").show();
 $(".shoppe").hide();
@@ -18,9 +26,10 @@ function showCart() {
   $(".cart").show();
 }
 
-function popup(shirt) {
-$("#i" + shirt).show();
-item = shirt;
+function popup(item) {
+
+$("#item").attr("src", item);
+$("shoppePop").show();
 }
 
 function addToCart() {
