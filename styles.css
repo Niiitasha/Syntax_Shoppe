@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 h1 {
     text-align: center;
     font-family: Rale way, sans-serif;
+=======
+@media (max-width: 1280px) {
+
+h1 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 400%;
+>>>>>>> fcf7d799a34e93aaf3da39ab947209326e19a0a7
 }
 
 button {
@@ -38,4 +47,5 @@ button {
     border-style: solid;
     margin-top: 10px;
     margin-left: 25px;
+}
 }
