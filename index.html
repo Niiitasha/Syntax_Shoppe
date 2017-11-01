@@ -1,72 +1,71 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8">
     <title>Syntax_Shop</title>
-    <link href="styles.css" type="text/css" rel="stylesheet" />
+    <link href= "styles.css" type="text/css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <script src="jquery.js"></script>
-</head>
+  </head>
+  <body>
 
-<body>
+<h1>{Synt@x_Shoppe}</h1>
 
-    <h1>{Synt@x_Shoppe}</h1>
-
-    <div>
-        <button type="button" class="navbar" onclick="showCart()">Shoppe</button>
-        <button type="button" class="navbar" onclick="showCart()">Cart</button>
-    </div>
+<div>
+<button type = "button" class = "navbar" onclick = "showCart()">Shoppe</button>
+<button type = "button" class = "navbar" onclick = "showCart()">Cart</button>
+</div>
 
 
-    <div class="home">
+<div class = "home">
 
-    </div>
+</div>
 
-    <div id="shoppe">
+<div id = "shoppe">
 
-        <div class="images"></div>
-        <div class="images"></div>
-        <div class="images"></div>
-        <div class="images"></div>
-        <div class="images"></div>
-        <div class="images"></div>
-        <div class="images"></div>
-        <div class="images"></div>
-        <div class="images"></div>
-        <div class="images"></div>
-        <div class="images"></div>
-        <div class="images"></div>
-    </div>
+  <div class="images" id="i1" onclick="popup(1)"></div>
+  <div class="images" id="i2" onclick="popup(2)"></div>
+  <div class="images" id="i3" onclick="popup(3)"></div>
+  <div class="images" id="i4" onclick="popup(4)"></div>
+  <div class="images" id="i5" onclick="popup(5)"></div>
+  <div class="images" id="i6" onclick="popup(6)"></div>
+  <div class="images" id="i7" onclick="popup(7)"></div>
+  <div class="images" id="i8" onclick="popup(8)"></div>
+  <div class="images" id="i9" onclick="popup(9)"></div>
+  <div class="images" id="i10" onclick="popup(10)"></div>
+  <div class="images" id="i11" onclick="popup(11)"></div>
+  <div class="images" id="i12" onclick="popup(12)"></div>
+</div>
 
-    <div class="shoppePop">
+<div class="shoppePop">
+<img src="#" id = "item">
+<input type="text">;
+<input type="number" min="1" value="1">
+<button> Add to Cart </button>
+</div>
 
-    </div>
+<div class="cart">
+  <div class="purchases" id="p1"></div>
+  <div class="purchases" id="p2"></div>
+  <div class="purchases" id="p3"></div>
+  <div class="purchases" id="p4"></div>
+  <div class="purchases" id="p5"></div>
+  <div class="purchases" id="p6"></div>
+  <div class="purchases" id="p7"></div>
+  <div class="purchases" id="p8"></div>
+  <div class="purchases" id="p9"></div>
+  <div class="purchases" id="p10"></div>
+  <div class="purchases" id="p11"></div>
+  <div class="purchases" id="p12"></div>
+</div>
 
-    <div class="cart">
-        <div class="purchases"></div>
-        <div class="purchases"></div>
-        <div class="purchases"></div>
-        <div class="purchases"></div>
-        <div class="purchases"></div>
-        <div class="purchases"></div>
-        <div class="purchases"></div>
-        <div class="purchases"></div>
-        <div class="purchases"></div>
-        <div class="purchases"></div>
-        <div class="purchases"></div>
-        <div class="purchases"></div>
-    </div>
+<div class="payment">
 
-    <div class="payment">
+</div>
 
-    </div>
+<div class="receipt">
 
-    <div class="receipt">
+</div>
 
-    </div>
-
-    <script src="script.js"></script>
-</body>
-
+  <script src="script.js"></script>
+  </body>
 </html>
