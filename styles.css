@@ -1,7 +1,9 @@
+@media (max-width: 1280px) {
 
 h1 {
   text-align: center;
   font-family: 'Raleway', sans-serif;
+  font-size: 400%;
 }
 
 button {
@@ -39,4 +41,5 @@ button {
   border-style: solid;
   margin-top: 10px;
   margin-left: 25px;
+}
 }
