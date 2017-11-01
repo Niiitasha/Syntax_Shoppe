@@ -3,6 +3,12 @@ h1 {
   text-align: center;
 }
 
+button {
+  height: 15%;
+  width: 20%;
+  margin-left: 20%;
+}
+
 #shoppe {
   display: flex;
   flex-direction: row;
@@ -19,4 +25,17 @@ h1 {
   background-color: blue;
   border-style: solid;
   margin-top: 25px;
+}
+
+.cart{
+  display: flex;
+  flex-direction: column;
+}
+
+.purchases {
+  height: 30px;
+  width: 85px;
+  border-style: solid;
+  margin-top: 10px;
+  margin-left: 25px;
 }
