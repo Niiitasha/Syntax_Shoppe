@@ -1,42 +1,41 @@
-
 h1 {
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-family: Rale way, sans-serif;
 }
 
 button {
-  height: 15%;
-  width: 20%;
-  margin-left: 20%;
+    height: 15%;
+    width: 20%;
+    margin-left: 20%;
 }
 
 #shoppe {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
 
 .images {
-  height: 350px;
-  width: 250px;
-  background-color: blue;
-  border-style: solid;
-  margin-top: 25px;
+    height: 350px;
+    width: 250px;
+    background-color: blue;
+    border-style: solid;
+    margin-top: 25px;
 }
 
-.cart{
-  display: flex;
-  flex-direction: column;
+.cart {
+    display: flex;
+    flex-direction: column;
 }
 
 .purchases {
-  height: 30px;
-  width: 85px;
-  border-style: solid;
-  margin-top: 10px;
-  margin-left: 25px;
+    height: 30px;
+    width: 85px;
+    border-style: solid;
+    margin-top: 10px;
+    margin-left: 25px;
 }
