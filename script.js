@@ -22,11 +22,11 @@ var items = [{
   description: "none",
   price: 0,
   quantity: 0
-}]
+}];
 
 
 
-pay(style){
+function pay(style){
 switch (style) {
   case "cash":
 
@@ -38,11 +38,11 @@ switch (style) {
 close("payment");
 }
 
-showCard(){
+function showCard(){
 $("creditOptions").show();
 }
 
-showCash(){
+function showCash(){
 
 }
 
