@@ -1,3 +1,21 @@
+function showCart() {
+  alert("showCart");
+  $("#shoppe").hide();
+  $("#cart").show();
+}
+
+function popup(item) {
+alert(item);
+$("#item").attr("src", item);
+$("#shoppePop").show();
+}
+
+function showShoppe() {
+  alert('showShoppe');
+  $("#shoppe").show();
+  $("#cart").hide();
+}
+
 $(document).ready(function() {
 
 var items = [{
@@ -7,24 +25,6 @@ var items = [{
   price: 0,
   quantity: 0
 }]
-
-function showShoppe() {
-  $(".home").hide();
-  $(".shoppe").show();
-  $(".cart").hide();
-}
-
-function showCart() {
-  $(".home").hide();
-  $(".shoppe").hide();
-  $(".cart").show();
-}
-
-function popup(item) {
-
-$("#item").attr("src", item);
-$("shoppePop").show();
-}
 
 function addToCart() {
 

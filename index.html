@@ -8,17 +8,17 @@
     <script src="jquery.js"></script>
   </head>
   <body>
-
+<div id = "navbar">
 <h1 class = "syntaxShoppe">{Synt@x_Shoppe}</h1>
 
 <div>
-<button type = "button" class = "navbar" onclick = "showCart()">Shoppe</button>
+<button type = "button" class = "navbar" onclick = "showShoppe()">Shoppe</button>
 <button type = "button" class = "navbar" onclick = "showCart()">Cart</button>
 </div>
-
+</div>
 <div id = "shoppe">
 
-  <div class="images" id="i1" onclick="popup(1)"><img src="Penguin.jpg"></div>
+  <div class="images" id="i1" onclick="popup('Penguin.jpg')"><img src="Penguin.jpg"></div>
   <div class="images" id="i2" onclick="popup(2)"><img src="Penguin.jpg"></div>
   <div class="images" id="i3" onclick="popup(3)"><img src="Penguin.jpg"></div>
   <div class="images" id="i4" onclick="popup(4)"><img src="Penguin.jpg"></div>
@@ -32,14 +32,14 @@
   <div class="images" id="i12" onclick="popup(12)"><img src="Penguin.jpg"></div>
 </div>
 
-<div class="shoppePop">
+<div id="shoppePop">
 <img src="Penguin.jpg" id = "item">
 <input type="text">;
 <input type="number" min="1" value="1">
 <button> Add to Cart </button>
 </div>
 
-<div class="cart">
+<div id="cart">
   <div class="purchases" id="p1"></div>
   <div class="purchases" id="p2"></div>
   <div class="purchases" id="p3"></div>
@@ -55,13 +55,13 @@
   <button id= "purchase">Complete Your Purchase</button>
 </div>
 
-<div class = "payment">
+<div id = "payment">
 <input id = "cardC" value= "card number">
 <input id = "expDate" value = "expiration date">
 <input id = "cVV" value = "CVV" >
 </div>
 
-<div class="receipt">
+<div id="receipt">
 <h3>Thank you for your purchase!</h3>
 
 </div>
