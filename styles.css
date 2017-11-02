@@ -14,7 +14,7 @@ button {
     margin-left: 20%;
 }
 #navbar{
-  background-color: white;
+  left: 0px;
   position: fixed;
   width: 100%;
   top: 0px;
