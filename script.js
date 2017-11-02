@@ -7,6 +7,7 @@ function showCart() {
 function popup(item) {
 var element = items[item];
 $("#shoppePop").show();
+$("price").html("$" + element.price);
 $("#item").attr("src", element.src);
 $("#hidden").val(item);
 }
