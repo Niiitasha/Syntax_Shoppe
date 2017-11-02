@@ -5,7 +5,7 @@ function showCart() {
 }
 
 function popup(item) {
-alert(item);
+
 $("#item").attr("src", item);
 $("#shoppePop").show();
 }
