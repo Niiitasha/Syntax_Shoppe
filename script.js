@@ -153,8 +153,8 @@ $("#" + popup).hide();
 
 $(document).ready(function() {
 
-$("#text").keypress(function(){
-var text = $("#text").val();
-  $("#customWords").html(text);
+$("#text").keyup(function(){
+  var text = $("#text").val();
+    $("#customWords").html(text);
 });
 });
