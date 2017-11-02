@@ -18,7 +18,7 @@ button {
   position: fixed;
   width: 100%;
   top: 0px;
-  background-color: blue;
+  background-color: white;
 }
 .navbar{
   margin-bottom: 10px;
@@ -29,6 +29,7 @@ button {
     flex-wrap: wrap;
     justify-content: space-between;
     justify-content: space-around;
+    display: none;
 }
 
 .images {
@@ -36,26 +37,50 @@ button {
     width: 250px;
     margin-top: 25px;
 }
+
 img{
   border: 3px solid black;
 }
+
 #item{
-  margin-top: 10px;
-  margin-left: 10px;
+
+  margin-left: 115px;
 }
+
 #cart {
     display: flex;
     flex-direction: column;
-    background-color: yellow;
-      border: 3px solid black;
+    justify-content: space-around;
+    background-color: white;
+    border: 3px solid black;
 }
 
 #shoppePop{
-background-color: red;
-  height: 350px;
-  width: 250px;
+background-color: white;
+  height: 500px;
+  width: 500px;
   border: 3px solid black;
+  margin-left: 30%;
+  position: absolute;
+
 }
+
+#text {
+  margin-left: 33%;
+}
+
+#quantity {
+width: 20px;
+margin-left: 33%;
+margin-top: 8px;
+}
+
+#add {
+height: 20px;
+width: 50px;
+}
+
+
 #payment{
 background-color: green;
 border: 3px solid black;
