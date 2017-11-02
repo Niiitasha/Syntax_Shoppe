@@ -53,3 +53,11 @@ function addToCart() {
 function close(popup) {
 $("#" + popup).hide();
 }
+
+//$(document).ready(function() {
+
+$("#text").on("change", function(){
+var text = $("#text").val();
+  $("#customWords").val(text);
+});
+//});
