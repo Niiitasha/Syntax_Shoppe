@@ -144,6 +144,7 @@ function showCash(){
 
 function addToCart() {
 var item = $("#hidden").val();
+alert(item);
 }
 
 function close(popup) {
