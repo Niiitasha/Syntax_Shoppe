@@ -61,6 +61,8 @@
 <div id = "payment">
 <button type="button" id="cash" onclick="showCash()">Cash</button>
 <button type="button" id="card" onclick="showCard()">Credit</button>
+</div>
+
 <div id="creditOptions">
 <input id = "cardC" value= "card number">
 <input id = "expDate" value = "expiration date">
@@ -68,9 +70,15 @@
 <button type="button" id="pay()">Pay</button>
 </div>
 
+<div id="cashMoney">
+<input readonly id = "total" value= "Total">
+<input id = "amountTendered" value = "Amount Tendered">
+<input readonly id = "change" value = "Change" >
+<button type="button" id="pay()">Pay</button>
+</div>
+
 <div id="receipt">
 <h2>Thank you for your purchase!</h2>
-
 </div>
 
   <script src="script.js"></script>
