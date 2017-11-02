@@ -18,8 +18,6 @@ button {
     justify-content: space-around;
 }
 
-
-
 .images {
     height: 350px;
     width: 250px;
@@ -40,6 +38,6 @@ button {
     margin-top: 10px;
     margin-left: 25px;
 }
-@media (min-width: 1280px) {
+@media (min-width: 1320px) {
 
 }

@@ -8,12 +8,6 @@ var items = [{
   quantity: 0
 }]
 
-function showHome() {
-$(".home").show();
-$(".shoppe").hide();
-$(".cart").hide();
-}
-
 function showShoppe() {
   $(".home").hide();
   $(".shoppe").show();

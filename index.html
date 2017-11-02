@@ -9,16 +9,11 @@
   </head>
   <body>
 
-<h1>{Synt@x_Shoppe}</h1>
+<h1 class = "syntaxShoppe">{Synt@x_Shoppe}</h1>
 
 <div>
 <button type = "button" class = "navbar" onclick = "showCart()">Shoppe</button>
 <button type = "button" class = "navbar" onclick = "showCart()">Cart</button>
-</div>
-
-
-<div class = "home">
-
 </div>
 
 <div id = "shoppe">
@@ -57,13 +52,17 @@
   <div class="purchases" id="p10"></div>
   <div class="purchases" id="p11"></div>
   <div class="purchases" id="p12"></div>
+  <button id= "purchase">Complete Your Purchase</button>
 </div>
 
-<div class="payment">
-
+<div class = "payment">
+<input id = "cardC" value= "card number">
+<input id = "expDate" value = "expiration date">
+<input id = "cVV" value = "CVV" >
 </div>
 
 <div class="receipt">
+<h3>Thank you for your purchase!</h3>
 
 </div>
 
