@@ -5,7 +5,8 @@ function showCart() {
 }
 
 function popup(item) {
-$("#item").attr("src", items[item].src);
+var element = items[item];
+$("#item").attr("src", element.src);
 $("#shoppePop").show();
 }
 
@@ -120,7 +121,6 @@ var items = [{
   src: "syntaxImages/redhoodie.jpg"
 }];
 
-
 function pay(style){
   switch (style) {
   case "cash":
@@ -151,8 +151,8 @@ $("#" + popup).hide();
 
 $(document).ready(function() {
 
-$("#text").on("change", function(){
+$("#text").keypress(function(){
 var text = $("#text").val();
-  $("#customWords").val(text);
+  $("#customWords").html(text);
 });
 });
