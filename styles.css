@@ -1,3 +1,4 @@
+
 body{
 margin-top: 175px;
 background-color: #c3cfe2
@@ -59,6 +60,7 @@ img{
     background-color: white;
     border: 3px solid black;
 }
+
 #shoppePop {
 background-color: white;
   height: 500px;
@@ -67,31 +69,32 @@ background-color: white;
   left: 0px;
   top: 30px;
   margin-left: 30%;
-  margin-top: 10%;
+  margin-top: 12%;
   position: fixed;
   z-index: 5;
   display: none;
 }
 
 #text {
-  margin-left: 33%;
+  margin-left: 35%;
 }
 
 #quantity {
 width: 51px;
-margin-left: 33%;
+margin-left: 35%;
 margin-top: 8px;
 }
 
 #numOfTees {
-margin-left: 33%;
+margin-left: 35%;
+margin-top: 1%;
 }
 
-#price{
-height: 25px;
+#price {
+height: 15px;
 width: 75px;
 margin-top: 2%;
-margin-left: 33%;
+margin-left: 35%;
 padding-bottom: 2%;
 border: solid 1px;
 }
@@ -99,7 +102,7 @@ border: solid 1px;
 #add {
 height: 20px;
 width: 50px;
-margin-left: 33%;
+margin-left: 35%;
 }
 
 .purchases {
@@ -107,6 +110,14 @@ margin-left: 33%;
     width: 35px;
     margin-top: 10px;
     margin-left: 25px;
+}
+
+#purchase {
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 2%;
+  font-size: 125%;
 }
 
 #payment {
@@ -159,8 +170,4 @@ position: absolute;
   margin-left: 30%;
   margin-top: 10%;
   position: absolute;
-}
-
-@media (min-width: 1320px) {
-
 }
