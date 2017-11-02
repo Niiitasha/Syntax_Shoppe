@@ -44,9 +44,9 @@ img{
   border: 3px solid black;
 }
 
-#item{
+#item {
   margin-top: 5%;
-  margin-left: 125px;
+  margin-left: 25%;
 }
 
 #cart {
@@ -57,7 +57,7 @@ img{
     border: 3px solid black;
 }
 
-#shoppePop{
+#shoppePop {
 background-color: white;
   height: 500px;
   width: 500px;
@@ -126,7 +126,13 @@ margin-top: 10%;
 position: absolute;
 }
 
-#receipt{
+#goodbye {
+  margin-top: 5%;
+  margin-left: 2%;
+}
+
+#receipt {
+  text-align: center;
   background-color: white;
   height: 500px;
   width: 500px;
