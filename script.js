@@ -16,8 +16,6 @@ function showShoppe() {
   $("#cart").hide();
 }
 
-$(document).ready(function() {
-
 var items = [{
   name: "none",
   category: "none",
@@ -26,12 +24,32 @@ var items = [{
   quantity: 0
 }]
 
+
+
+pay(style){
+switch (style) {
+  case "cash":
+
+    break;
+  case "credit":
+
+    break;
+}
+close("payment");
+}
+
+showCard(){
+$("creditOptions").show();
+}
+
+showCash(){
+
+}
+
 function addToCart() {
 
 }
 
-function exitPopup(popup) {
-
+function close(popup) {
+$("#" + popup).hide();
 }
-
-});
