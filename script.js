@@ -6,9 +6,9 @@ function showCart() {
 
 function popup(item) {
 var element = items[item];
-
 $("#shoppePop").show();
 $("#item").attr("src", element.src);
+$("#hidden").val(item);
 }
 
 function showShoppe() {
@@ -143,7 +143,7 @@ function showCash(){
 }
 
 function addToCart() {
-
+var item = $("#hidden").val();
 }
 
 function close(popup) {

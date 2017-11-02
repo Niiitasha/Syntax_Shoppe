@@ -1,11 +1,13 @@
 body{
 margin-top: 175px;
+background-color: #c3cfe2
 }
 
 h1 {
   text-align: center;
   font-family: 'Raleway', sans-serif;
   font-size: 400%;
+  margin-bottom: 20px;
 }
 
 button {
@@ -19,7 +21,8 @@ button {
   position: fixed;
   width: 100%;
   top: 0px;
-  background-color: white;
+  background-color: black;
+  color: white;
 }
 
 .navbar {
@@ -64,9 +67,7 @@ background-color: white;
   border: 3px solid black;
   margin-left: 30%;
   margin-top: 10%;
-  position: fixed;
-  display: none;
-  z-index: 2;
+  position: absolute;
 }
 
 #text {
@@ -101,8 +102,7 @@ width: 500px;
 border: 3px solid black;
 margin-left: 30%;
 margin-top: 10%;
-padding-top: 25px;
-/*position: absolute;*/
+position: absolute;
 }
 
 #creditOptions {
@@ -114,7 +114,7 @@ width: 500px;
 border: 3px solid black;
 margin-left: 30%;
 margin-top: 10%;
-/*position: absolute;*/
+position: absolute;
 }
 
 #cashMoney {
@@ -126,7 +126,7 @@ width: 500px;
 border: 3px solid black;
 margin-left: 30%;
 margin-top: 10%;
-/*position: absolute;*/
+position: absolute;
 }
 
 #goodbye {
@@ -142,7 +142,7 @@ margin-top: 10%;
   border: 3px solid black;
   margin-left: 30%;
   margin-top: 10%;
-  /*position: absolute;*/
+  position: absolute;
 }
 
 @media (min-width: 1320px) {
