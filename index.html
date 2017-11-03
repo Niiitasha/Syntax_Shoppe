@@ -2,21 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>{The_Synt@x_Shoppe}</title>
+    <title>{The_Synt@x_Shoppe}</title><!--Our Awesome Title-->
     <link href= "styles.css" type="text/css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <script src="jquery.js"></script>
   </head>
   <body>
-<div id = "navbar">
+<div id = "navbar"><!--Navigation bar includes title of our shoppe-->
 <h1 class = "syntaxShoppe">{Synt@x_Shoppe}</h1>
 
-<div>
+<div><!--used divs to add buttons for navigating to home/cart-->
 <button type = "button" class = "navbar" onclick = "showShoppe()">Shoppe</button>
 <button type = "button" class = "navbar" onclick = "showCart()">Cart</button>
 </div>
 </div>
-<div id = "shoppe">
+<div id = "shoppe"><!--this is our div to hold our items, and item images-->
 
 
   <div class="images" id="i1"><img src="syntaxImages\purplebeanie.jpg"  onclick="popup('1')"></div>
@@ -33,7 +33,7 @@
   <div class="images" id="i12"><img src="syntaxImages\redhoodie.jpg" onclick="popup('12')"></div>
 </div>
 
-<div id="shoppePop">
+<div id="shoppePop"><!--This our pop ub box where the user can customize their item, add quantity, etc-->
 <button id="closeMe" onclick="$('#shoppePop').hide()"type="button">X</button>
 <div id="hidden" value="0" hidden></div>
 <img src="Penguin.jpg" id = "item">
@@ -46,7 +46,7 @@
 <button id= "add" onclick="addToCart()"> Add </button>
 </div>
 
-<div id="cart">
+<div id="cart"><!--for individual divs per item to store the items info, and it will later get pulled into functions to complete purchase-->
   <div class="purchases" id="p1">
        <img src="syntaxImages/purplebeanthumbnail.jpg">
        <div class="description"></div>
@@ -122,26 +122,26 @@
   <button id= "purchase" onclick="checkout()">Complete Your Purchase</button>
 </div>
 
-<div id = "payment">
+<div id = "payment"><!--div for our payment buttons-->
 <button type="button" id="cash" onclick="showCash()">Cash</button>
 <button type="button" id="card" onclick="showCard()">Credit</button>
 </div>
 
-<div id="creditOptions">
+<div id="creditOptions"><!--div for credit options if chosen-->
 <input id = "cardC" placeholder="Card Number">
 <input id = "expDate" placeholder="Expiration Date">
 <input id = "cvv" placeholder="CVV">
 <button class = "pay" type="button" onclick="pay('creditOptions')">Pay</button>
 </div>
 
-<div id="cashMoney">
+<div id="cashMoney"><!--div for payment info with cash-->
 <div id="total">Total: </div>
 <input id="amountTendered" type="number" min="0.00" step="0.01" max="2500" value="00.00" />
 <div id="change">Change: </div>
 <button class = "pay" type="button" onclick="pay('cashMoney')">Pay</button>
 </div>
 
-<div id="receipt">
+<div id="receipt"><!--Reciept div and thank you message for user-->
 <h2>Thank you for your purchase!</h2>
 <img src="Penguin.jpg" id = "goodbye">
 </div>
