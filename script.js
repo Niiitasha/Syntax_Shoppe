@@ -4,12 +4,22 @@ var total = 0;
 function showCart() {
   $("#shoppe").hide();
   $("#cart").show();
+  $.each(items, function(count) {
+if (items[count].quantity > 0) {
+  $("#p"+ count).find(".description").html(items[count].description);
+  $("#p"+ count).find(".itemQuantity").html(items[count].quantity);
+  $("#p"+ count).find(".cost").html((items[count].price * items[count].quantity).toFixed(2));
+  $("#p" + count).show();
+}else{
+  $("#p" + count).hide();
+}
+  });
 }
 
 function popup(item) {
 var element = items[item];
 $("#shoppePop").show();
-$("price").html("$" + element.price);
+$("#price").html("Price: $" + element.price);
 $("#item").attr("src", element.src);
 $("#hidden").val(item);
 }
@@ -30,7 +40,7 @@ var items = [{
 {
   name: "Purple Beanie",
   category: "Beanie",
-  description: "Purple",
+  description: "Purple Beanie",
   price: 24.99,
   quantity: 0,
   src: "syntaxImages/purplebeanie.jpg"
@@ -38,7 +48,7 @@ var items = [{
 {
   name: "Green Beanie",
   category: "Beanie",
-  description: "Green",
+  description: "Green Beanie",
   price: 24.99,
   quantity: 0,
   src: "syntaxImages/greenbeanie.jpg"
@@ -46,7 +56,7 @@ var items = [{
 {
   name: "Grey Beanie",
   category: "Beanie",
-  description: "Grey",
+  description: "Grey Beanie",
   price: 24.99,
   quantity: 0,
   src: "syntaxImages/greybeanie.jpg"
@@ -54,7 +64,7 @@ var items = [{
 {
   name: "Brown Beanie",
   category: "Beanie",
-  description: "Brown",
+  description: "Brown Beanie",
   price: 24.99,
   quantity: 0,
   src: "syntaxImages/brownbeanie.jpg"
@@ -62,7 +72,7 @@ var items = [{
 {
   name: "Black T-shirt",
   category: "T-shirt",
-  description: "Black",
+  description: "Black T-shirt",
   price: 24.99,
   quantity: 0,
   src: "syntaxImages/blacktshirt.png"
@@ -70,7 +80,7 @@ var items = [{
 {
   name: "Purple T-shirt",
   category: "T-shirt",
-  description: "Purple",
+  description: "Purple T-shirt",
   price: 24.99,
   quantity: 0,
   src: "syntaxImages/purpletshirt.png"
@@ -78,7 +88,7 @@ var items = [{
 {
   name: "Green T-shirt",
   category: "T-shirt",
-  description: "Green",
+  description: "Green T-shirt",
   price: 24.99,
   quantity: 0,
   src: "syntaxImages/greentshirt.png"
@@ -86,7 +96,7 @@ var items = [{
 {
   name: "Red T-shirt",
   category: "T-shirt",
-  description: "Red",
+  description: "Red T-shirt",
   price: 24.99,
   quantity: 0,
   src: "syntaxImages/redtshirt.png"
@@ -94,7 +104,7 @@ var items = [{
 {
   name: "Green Hoodie",
   category: "Hoodie",
-  description: "Green",
+  description: "Green Hoodie",
   price: 39.99,
   quantity: 0,
   src: "syntaxImages/greenhoodie.jpg"
@@ -102,7 +112,7 @@ var items = [{
 {
   name: "Purple Hoodie",
   category: "Hoodie",
-  description: "Purple",
+  description: "Purple Hoodie",
   price: 39.99,
   quantity: 0,
   src: "syntaxImages/purplehoodie.jpg"
@@ -110,7 +120,7 @@ var items = [{
 {
   name: "Grey Hoodie",
   category: "Hoodie",
-  description: "Grey",
+  description: "Grey Hoodie",
   price: 39.99,
   quantity: 0,
   src: "syntaxImages/greyhoodie.jpg"
@@ -118,7 +128,7 @@ var items = [{
 {
   name: "Red Hoodie",
   category: "Hoodie",
-  description: "Red",
+  description: "Red Hoodie",
   price: 24.99,
   quantity: 0,
   src: "syntaxImages/redhoodie.jpg"
@@ -126,9 +136,9 @@ var items = [{
 
 function checkout() {
   $.each(items, function(item){
-    subtotal += (item.price * item.quantity);
+    subtotal += parseInt(items[item].price * items[item].quantity);
   });
-  total = subtotal * 1.06;
+  total = (subtotal * 1.06).toFixed(2);
   $("#payment").show();
 }
 
@@ -144,6 +154,7 @@ close("payment");
 }
 
 function showCash(){
+  $("#total").html("Total: " + total);
 $("#cashMoney").show();
 close("payment");
 }
@@ -151,16 +162,18 @@ close("payment");
 function addToCart() {
 var item = $("#hidden").val();
 var element = items[item];
-element.quantity = $("#quantity").val();
+element.quantity += parseInt($("#quantity").val());
 close("shoppePop");
 }
 
 function close(popup) {
 $("#" + popup).hide();
 }
-
+$("#amountTendered").change(function() {
+var remainder = ($("#amountTendered").val() - total);
+$("#change").html("Change: " + remainder.toFixed(2));
+});
 $(document).ready(function() {
-
 $("#text").keyup(function(){
   var text = $("#text").val();
     $("#customWords").html(text + ";");

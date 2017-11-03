@@ -35,6 +35,7 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+
 }
 
 .images {
@@ -48,21 +49,19 @@ img{
 }
 
 #item {
-  margin-top: 5%;
-  margin-left: 25%;
+  margin-top: 10%;
+  margin-left: 5%;
 }
 
 #cart {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     background-color: white;
     border: 3px solid black;
+    display: none;
 }
 
 #shoppePop {
 background-color: white;
-  height: 500px;
+  height: 425px;
   width: 500px;
   border: 3px solid black;
   left: 0px;
@@ -70,25 +69,39 @@ background-color: white;
   margin-left: 30%;
   margin-top: 12%;
   position: fixed;
-  z-index: 5;
   display: none;
+  z-index: 5;
 }
-
 #closeMe {
   position: absolute;
   top: 0;
-  bottom: 0;
+  right: 0;
+  border: none;
+  background-color: white;
+  height: 20px;
+  width: 20px;
+}
+#closeMe:hover{
+  cursor: pointer;
+}
+#text {
+  position: absolute;
+  left: 300px;
+  top: 100px;
 }
 
-#text {
-  margin-left: 35%;
-  position: fixed;
+#customWords{
+  font-size: 25px;
+position: absolute;
+left: 100px;
+top: 225px;
 }
 
 #quantity {
 width: 51px;
-margin-left: 35%;
-margin-top: 8px;
+position: absolute;
+top: 250px;
+left: 300px;
 }
 
 #numOfTees {
@@ -97,40 +110,72 @@ margin-top: 1%;
 }
 
 #price {
-height: 15px;
-width: 75px;
-margin-top: 2%;
-margin-left: 35%;
-padding-bottom: 2%;
-border: solid 1px;
+  height: 25px;
+width: 100px;
+position: absolute;
+left: 350px;
+top: 175px;
 }
 
 #add {
 height: 20px;
 width: 50px;
-margin-left: 35%;
+position: absolute;
+left: 300px;
+top: 250px;
 }
 
 .purchases {
     height: 55px;
-    width: 35px;
+    width: 95%;
     margin-top: 10px;
     margin-left: 25px;
+    border: 3px solid black;
+    display: flex;
 }
-
+.purchases img{
+  border: none;
+  border-right: 3px solid black;
+  height: 55px;
+  width: 45px;
+}
+.description{
+  text-align: left;
+  line-height: 55px;
+  text-align: center;
+  width: 50%;
+  height: 55px;
+  border-right: 3px solid black;
+}
+.itemQuantity{
+    line-height: 55px;
+  text-align: center;
+  width: 25%;
+  height: 55px;
+border-right: 3px solid black;
+}
+.cost{
+    line-height: 55px;
+    text-align: center;
+  width: 25%;
+  height: 55px;
+}
 #purchase {
   margin: 0 auto;
-  padding-top: 10px;
+  margin-top: 20px;
   padding-bottom: 10px;
   margin-bottom: 2%;
   font-size: 125%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
 }
 
 #payment {
 background-color: white;
 border: 3px solid black;
 background-color: white;
-height: 500px;
+height: 425px;
 width: 500px;
 border: 3px solid black;
 left: 0px;
@@ -158,7 +203,7 @@ display: none;
   background-color: white;
   border: 3px solid black;
   background-color: white;
-  height: 500px;
+  height: 400px;
   width: 500px;
   border: 3px solid black;
   left: 0px;
@@ -167,32 +212,42 @@ display: none;
   margin-top: 12%;
   position: fixed;
   z-index: 7;
-  display: none;
   padding-top: 25px;
+  display: none;
+  flex-direction: column;
 }
 
 #cardC {
-margin-top: 20%;
-margin-left: 10%;
+  margin-top: 10%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 30%;
 border: solid 2px;
-height: 20px;
+height: 30px;
 }
 
 #expDate {
-margin-top: 20%;
+  margin-top: 10%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 30%;
 border: solid 2px;
-height: 20px;
+height: 30px;
 }
 
 #cvv {
-margin-top: 20%;
+  margin-top: 10%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 30%;
 border: solid 2px;
-height: 20px;
+height: 30px;
 }
 
 .pay {
-margin-top: 40%;
-margin-left: 40%;
+margin-top: 10%;
+margin-left: 50%;
+transform: translateX(-50%);
 font-size: 200%;
 border: solid 2px;
 }
@@ -201,7 +256,7 @@ border: solid 2px;
   background-color: white;
   border: 3px solid black;
   background-color: white;
-  height: 500px;
+  height: 425px;
   width: 500px;
   border: 3px solid black;
   left: 0px;
@@ -214,28 +269,40 @@ border: solid 2px;
 }
 
 #total {
-  margin-top: 20%;
-  margin-left: 10%;
+  padding: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  width: 30%;
   border: solid 2px;
-  height: 20px;
+  height: 30px;
+  line-height: 30px;
 }
 
 #amountTendered {
-  margin-top: 20%;
+  padding: 3px;
   border: solid 2px;
-  height: 20px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10%;
+  height: 30px;
 }
 
 #change {
-  margin-top: 20%;
+  padding: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  width: 30%;
   border: solid 2px;
-  height: 20px;
+  height: 30px;
+  line-height: 30px;
 }
 
 #receipt {
   background-color: #c3cfe2;
   border: 3px solid black;
-  height: 500px;
+  height: 425px;
   width: 500px;
   border: 3px solid black;
   left: 0px;
@@ -248,7 +315,6 @@ border: solid 2px;
 }
 
 #goodbye {
-  margin-top: 5%;
   margin-left: 25%;
 }
 
