@@ -125,7 +125,7 @@ var items = [{
 }];
 
 function checkout() {
-  items.foreach(function(item){
+  $.each(items, function(item){
     subtotal += (item.price * item.quantity);
   });
   total = subtotal * 1.06;
