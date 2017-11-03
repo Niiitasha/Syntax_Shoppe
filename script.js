@@ -133,23 +133,19 @@ function checkout() {
 }
 
 function pay(style){
-  switch (style) {
-  case "cash":
 
-    break;
-  case "credit":
-
-    break;
-}
-close("payment");
+close(style);
+$("#receipt").show();
 }
 
 function showCard(){
-$("creditOptions").show();
+$("#creditOptions").show();
+close("payment");
 }
 
 function showCash(){
-
+$("#cashMoney").show();
+close("payment");
 }
 
 function addToCart() {
