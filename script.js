@@ -1,5 +1,4 @@
 function showCart() {
-  alert("showCart");
   $("#shoppe").hide();
   $("#cart").show();
 }
@@ -13,7 +12,6 @@ $("#hidden").val(item);
 }
 
 function showShoppe() {
-  alert('showShoppe');
   $("#shoppe").show();
   $("#cart").hide();
 }
