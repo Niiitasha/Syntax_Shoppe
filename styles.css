@@ -1,6 +1,179 @@
+body{
+margin-top: 75px;
+background-color: #c3cfe2
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 20px;
+}
+
+button {
+    height: 15%;
+    width: 20%;
+    margin-left: 20%;
+}
+
+#navbar {
+  left: 0px;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  background-color: black;
+  color: white;
+}
+
+.navbar {
+  margin-bottom: 10px;
+}
+
+#shoppe {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: none;
+    justify-content: space-between;
+    margin-top: 15%;
+}
+
+.images {
+    height: 100px;
+    width: 50px;
+    margin-top: 25px;
+}
+
+img{
+  border: 1px solid black;
+}
+
+#item {
+  margin-top: 5%;
+  margin-left: 25%;
+}
+
+#cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    border: 3px solid black;
+}
+
+#shoppePop {
+background-color: white;
+  height: 500px;
+  width: 500px;
+  border: 3px solid black;
+  left: 0px;
+  top: 30px;
+  margin-left: 30%;
+  margin-top: 12%;
+  position: fixed;
+  z-index: 5;
+  display: none;
+}
+
+#text {
+  margin-left: 35%;
+}
+
+#quantity {
+width: 51px;
+margin-left: 35%;
+margin-top: 8px;
+}
+
+#numOfTees {
+margin-left: 35%;
+margin-top: 1%;
+}
+
+#price {
+height: 15px;
+width: 75px;
+margin-top: 2%;
+margin-left: 35%;
+padding-bottom: 2%;
+border: solid 1px;
+}
+
+#add {
+height: 20px;
+width: 50px;
+margin-left: 35%;
+}
+
+.purchases {
+    height: 55px;
+    width: 35px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+#purchase {
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 2%;
+  font-size: 125%;
+}
+
+#payment {
+background-color: green;
+border: 3px solid black;
+background-color: white;
+height: 500px;
+width: 500px;
+border: 3px solid black;
+margin-left: 30%;
+margin-top: 10%;
+position: absolute;
+}
+
+#creditOptions {
+background-color: green;
+border: 3px solid black;
+background-color: white;
+height: 500px;
+width: 500px;
+border: 3px solid black;
+margin-left: 30%;
+margin-top: 10%;
+position: absolute;
+}
+
+#cashMoney {
+background-color: green;
+border: 3px solid black;
+background-color: white;
+height: 500px;
+width: 500px;
+border: 3px solid black;
+margin-left: 30%;
+margin-top: 10%;
+position: absolute;
+}
+
+#goodbye {
+  margin-top: 5%;
+  margin-left: 2%;
+}
+
+#receipt {
+  text-align: center;
+  background-color: white;
+  height: 500px;
+  width: 500px;
+  border: 3px solid black;
+  margin-left: 30%;
+  margin-top: 10%;
+  position: absolute;
+}
+
+@media only screen and (min-width: 480px){
 
 body{
-margin-top: 175px;
 background-color: #c3cfe2
 }
 
@@ -35,7 +208,6 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    justify-content: space-around;
 }
 
 .images {
@@ -170,4 +342,5 @@ position: absolute;
   margin-left: 30%;
   margin-top: 10%;
   position: absolute;
+}
 }
