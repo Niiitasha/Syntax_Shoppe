@@ -150,7 +150,9 @@ close("payment");
 
 function addToCart() {
 var item = $("#hidden").val();
-alert(item);
+var element = items[item];
+element.quantity = $("#quantity").val();
+close("shoppePop");
 }
 
 function close(popup) {
@@ -161,6 +163,6 @@ $(document).ready(function() {
 
 $("#text").keyup(function(){
   var text = $("#text").val();
-    $("#customWords").html(text);
+    $("#customWords").html(text + ";");
 });
 });
