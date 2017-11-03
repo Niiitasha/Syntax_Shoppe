@@ -1,7 +1,7 @@
 
 body{
 margin-top: 175px;
-background-color: #c3cfe2
+background-color: #c3cfe2;
 }
 
 h1 {
@@ -233,7 +233,7 @@ border: solid 2px;
 }
 
 #receipt {
-  background-color: white;
+  background-color: #c3cfe2;
   border: 3px solid black;
   background-color: white;
   height: 500px;
