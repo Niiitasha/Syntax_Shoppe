@@ -82,6 +82,7 @@ background-color: white;
 
 #text {
   margin-left: 35%;
+  position: fixed;
 }
 
 #quantity {
@@ -173,14 +174,27 @@ display: none;
 #cardC {
 margin-top: 20%;
 margin-left: 10%;
+border: solid 2px;
+height: 20px;
 }
 
 #expDate {
-margin-top: 20%
+margin-top: 20%;
+border: solid 2px;
+height: 20px;
 }
 
 #cvv {
 margin-top: 20%;
+border: solid 2px;
+height: 20px;
+}
+
+.pay {
+margin-top: 40%;
+margin-left: 40%;
+font-size: 200%;
+border: solid 2px;
 }
 
 #cashMoney {
@@ -197,6 +211,25 @@ margin-top: 20%;
   position: fixed;
   z-index: 8;
   display: none;
+}
+
+#total {
+  margin-top: 20%;
+  margin-left: 10%;
+  border: solid 2px;
+  height: 20px;
+}
+
+#amountTendered {
+  margin-top: 20%;
+  border: solid 2px;
+  height: 20px;
+}
+
+#change {
+  margin-top: 20%;
+  border: solid 2px;
+  height: 20px;
 }
 
 #receipt {

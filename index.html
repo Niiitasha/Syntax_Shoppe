@@ -34,7 +34,7 @@
 </div>
 
 <div id="shoppePop">
-<button id="closeMe" onclick="close("shoppePop")"type="button">X</button>
+<button id="closeMe" onclick="close('shoppePop')"type="button">X</button>
 <div id="hidden" value="0" hidden></div>
 <img src="Penguin.jpg" id = "item">
 <div id="customWords"> </div>
@@ -131,14 +131,14 @@
 <input id = "cardC" = placeholder="Card Number">
 <input id = "expDate" placeholder="Expiration Date">
 <input id = "cvv" placeholder="CVV">
-<button type="button" onclick="pay('creditOptions')">Pay</button>
+<button class = "pay" type="button" onclick="pay('creditOptions')">Pay</button>
 </div>
 
 <div id="cashMoney">
 <input readonly id = "total" value= "Total">
 <input id = "amountTendered" value = "Amount Tendered">
 <input readonly id = "change" value = "Change" >
-<button type="button" onclick="pay('cashMoney')">Pay</button>
+<button class = "pay" type="button" onclick="pay('cashMoney')">Pay</button>
 </div>
 
 <div id="receipt">
