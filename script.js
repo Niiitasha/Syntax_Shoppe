@@ -1,3 +1,6 @@
+var subtotal = 0;
+var total = 0;
+
 function showCart() {
   $("#shoppe").hide();
   $("#cart").show();
@@ -120,6 +123,14 @@ var items = [{
   quantity: 0,
   src: "syntaxImages/redhoodie.jpg"
 }];
+
+function checkout() {
+  items.foreach(function(item){
+    subtotal += (item.price * item.quantity);
+  });
+  total = subtotal * 1.06;
+  $("#payment").show();
+}
 
 function pay(style){
   switch (style) {
