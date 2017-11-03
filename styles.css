@@ -138,6 +138,19 @@ margin-left: 30%;
 margin-top: 12%;
 position: fixed;
 z-index: 6;
+display: none;
+}
+
+#cash {
+  margin-top: 30%;
+  font-size: 200%;
+  border: solid 2px;
+}
+
+#card {
+  margin-top: 30%;
+  font-size: 200%;
+  border: solid 2px;
 }
 
 #creditOptions {
@@ -153,7 +166,21 @@ z-index: 6;
   margin-top: 12%;
   position: fixed;
   z-index: 7;
-  display: none;
+  /*display: none;*/
+  padding-top: 25px;
+}
+
+#cardC {
+margin-top: 20%;
+margin-left: 10%;
+}
+
+#expDate {
+margin-top: 20%
+}
+
+#cvv {
+margin-top: 20%;
 }
 
 #cashMoney {
