@@ -167,7 +167,7 @@ display: none;
   margin-top: 12%;
   position: fixed;
   z-index: 7;
-  /*display: none;*/
+  display: none;
   padding-top: 25px;
 }
 
