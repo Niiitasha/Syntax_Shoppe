@@ -34,7 +34,6 @@ button {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
     justify-content: space-around;
 }
 
@@ -73,6 +72,12 @@ background-color: white;
   position: fixed;
   z-index: 5;
   display: none;
+}
+
+#closeMe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
 }
 
 #text {
@@ -121,53 +126,73 @@ margin-left: 35%;
 }
 
 #payment {
-background-color: green;
+background-color: white;
 border: 3px solid black;
 background-color: white;
 height: 500px;
 width: 500px;
 border: 3px solid black;
+left: 0px;
+top: 30px;
 margin-left: 30%;
-margin-top: 10%;
-position: absolute;
+margin-top: 12%;
+position: fixed;
+z-index: 6;
 }
 
 #creditOptions {
-background-color: green;
-border: 3px solid black;
-background-color: white;
-height: 500px;
-width: 500px;
-border: 3px solid black;
-margin-left: 30%;
-margin-top: 10%;
-position: absolute;
-}
-
-#cashMoney {
-background-color: green;
-border: 3px solid black;
-background-color: white;
-height: 500px;
-width: 500px;
-border: 3px solid black;
-margin-left: 30%;
-margin-top: 10%;
-position: absolute;
-}
-
-#goodbye {
-  margin-top: 5%;
-  margin-left: 2%;
-}
-
-#receipt {
-  text-align: center;
+  background-color: white;
+  border: 3px solid black;
   background-color: white;
   height: 500px;
   width: 500px;
   border: 3px solid black;
+  left: 0px;
+  top: 30px;
   margin-left: 30%;
-  margin-top: 10%;
-  position: absolute;
+  margin-top: 12%;
+  position: fixed;
+  z-index: 7;
+  display: none;
+}
+
+#cashMoney {
+  background-color: white;
+  border: 3px solid black;
+  background-color: white;
+  height: 500px;
+  width: 500px;
+  border: 3px solid black;
+  left: 0px;
+  top: 30px;
+  margin-left: 30%;
+  margin-top: 12%;
+  position: fixed;
+  z-index: 8;
+  display: none;
+}
+
+#receipt {
+  background-color: white;
+  border: 3px solid black;
+  background-color: white;
+  height: 500px;
+  width: 500px;
+  border: 3px solid black;
+  left: 0px;
+  top: 30px;
+  margin-left: 30%;
+  margin-top: 12%;
+  position: fixed;
+  z-index: 9;
+  display: none;
+}
+
+#goodbye {
+  margin-top: 5%;
+  margin-left: 25%;
+}
+
+h2 {
+  text-align: center;
 }
