@@ -1,155 +1,91 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <title>{The_Synt@x_Shoppe}</title>
+    <link href= "styles.css" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="jquery.js"></script>
+  </head>
+  <body>
+<div id = "navbar">
+<h1 class = "syntaxShoppe">{Synt@x_Shoppe}</h1>
 
-<head>
-  <meta charset="utf-8">
-  <title>{The_Synt@x_Shoppe}</title>
-  <link href="styles.css" type="text/css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <script src="jquery.js"></script>
-</head>
+<div>
+<button type = "button" class = "navbar" onclick = "showShoppe()">Shoppe</button>
+<button type = "button" class = "navbar" onclick = "showCart()">Cart</button>
+</div>
+</div>
+<div id = "shoppe">
 
-<body>
-  <div id="navbar">
-    <h1 class="syntaxShoppe">{Synt@x_Shoppe}</h1>
 
-    <div>
-      <button type="button" class="navbar" onclick="showShoppe()">Shoppe</button>
-      <button type="button" class="navbar" onclick="showCart()">Cart</button>
-    </div>
-  </div>
-  <div id="shoppe">
+  <div class="images" id="i1" onclick="popup('1')"><img src="syntaxImages\purplebeanie.jpg"></div>
+  <div class="images" id="i2" onclick="popup('2')"><img src="syntaxImages\greenbeanie.jpg"></div>
+  <div class="images" id="i3" onclick="popup('3')"><img src="syntaxImages\greybeanie.jpg"></div>
+  <div class="images" id="i4" onclick="popup('4')"><img src="syntaxImages\brownbeanie.jpg"></div>
+  <div class="images" id="i5" onclick="popup('5')"><img src="syntaxImages\blacktshirt.png"></div>
+  <div class="images" id="i6" onclick="popup('6')"><img src="syntaxImages\purpletshirt.png"></div>
+  <div class="images" id="i7" onclick="popup('7')"><img src="syntaxImages\greentshirt.png"></div>
+  <div class="images" id="i8" onclick="popup('8')"><img src="syntaxImages\redtshirt.png"></div>
+  <div class="images" id="i9" onclick="popup('9')"><img src="syntaxImages\greenhoodie.jpg"></div>
+  <div class="images" id="i10" onclick="popup('10')"><img src="syntaxImages\purplehoodie.jpg"></div>
+  <div class="images" id="i11" onclick="popup('11')"><img src="syntaxImages\greyhoodie.jpg"></div>
+  <div class="images" id="i12" onclick="popup('12')"><img src="syntaxImages\redhoodie.jpg"></div>
+</div>
 
-    <div class="images" id="i1" onclick="popup('1')"><img src="syntaxImages\purplebeanie.jpg"></div>
-    <div class="images" id="i2" onclick="popup('2')"><img src="syntaxImages\greenbeanie.jpg"></div>
-    <div class="images" id="i3" onclick="popup('3')"><img src="syntaxImages\greybeanie.jpg"></div>
-    <div class="images" id="i4" onclick="popup('4')"><img src="syntaxImages\brownbeanie.jpg"></div>
-    <div class="images" id="i5" onclick="popup('5')"><img src="syntaxImages\blacktshirt.png"></div>
-    <div class="images" id="i6" onclick="popup('6')"><img src="syntaxImages\purpletshirt.png"></div>
-    <div class="images" id="i7" onclick="popup('7')"><img src="syntaxImages\greentshirt.png"></div>
-    <div class="images" id="i8" onclick="popup('8')"><img src="syntaxImages\redtshirt.png"></div>
-    <div class="images" id="i9" onclick="popup('9')"><img src="syntaxImages\greenhoodie.jpg"></div>
-    <div class="images" id="i10" onclick="popup('10')"><img src="syntaxImages\purplehoodie.jpg"></div>
-    <div class="images" id="i11" onclick="popup('11')"><img src="syntaxImages\greyhoodie.jpg"></div>
-    <div class="images" id="i12" onclick="popup('12')"><img src="syntaxImages\redhoodie.jpg"></div>
-  </div>
+<div id="shoppePop">
+<button id="closeMe" onclick="close()"type="button">X</button>
+<div id="hidden" value="0" hidden></div>
+<img src="Penguin.jpg" id = "item">
+<div id="customWords"> </div>
+<div id="text1">
+<input id= "text" type="text">;
+</div>
+<input id= "quantity" type="number" min="1" value="1">
+<div id= "price"></div>
+<button id= "add" onclick="addToCart()"> Add </button>
+</div>
 
-  <div id="shoppePop">
-    <div id="hidden" value="0" hidden></div>
-    <img src="Penguin.jpg" id="item">
-    <div id="customWords"> </div>
-    <div id="text1">
-      <input id="text" type="text">;
-    </div>
-    <div id="numOfTees">
-      Quantity:
-    </div>
-    <input id="quantity" type="number" min="1" value="1">
-    <div id="price"></div>
-    <button id="add" onclick="addToCart()"> Add </button>
-  </div>
+<div id="cart">
+  <div class="purchases" id="p1"><img src ="syntaxImages/purplebeanthumbnail.jpg"></div>
+  <div class="purchases" id="p2"><img src ="syntaxImages/greenbeaniethumbnail.jpg"></div>
+  <div class="purchases" id="p3"><img src ="syntaxImages/greybeaniethumbnail.jpg"></div>
+  <div class="purchases" id="p4"><img src ="syntaxImages/brownbeaniethumbnail.jpg"></div>
+  <div class="purchases" id="p5"><img src ="syntaxImages/blacktshirtthumbnail.png"></div>
+  <div class="purchases" id="p6"><img src ="syntaxImages/purpletshirtthumbnail.png"></div>
+  <div class="purchases" id="p7"><img src ="syntaxImages/greentshirtthumbnail.png"></div>
+  <div class="purchases" id="p8"><img src ="syntaxImages/redtshirtthumbnail.png"></div>
+  <div class="purchases" id="p9"><img src ="syntaxImages/greenhoodiethumbnail.jpg"></div>
+  <div class="purchases" id="p10"><img src ="syntaxImages/purplehoodiethumbnail.jpg"></div>
+  <div class="purchases" id="p11"><img src ="syntaxImages/greyhoodiethumbnail.jpg"></div>
+  <div class="purchases" id="p12"><img src ="syntaxImages/redhoodthumbnail.jpg"></div>
+  <button id= "purchase">Complete Your Purchase</button>
+</div>
 
-  <div id="cart">
-    <div class="purchases" id="p1">
-      <img src="syntaxImages/purplebeanthumbnail.jpg">
-      <div class="description">test</div>
-      <div class="itemQuantity">test2</div>
-      <div class="cost">test3</div>
-    </div>
-    <div class="purchases" id="p2">
-      <img src="syntaxImages/greenbeaniethumbnail.jpg">
-      <div class="description"></div>
-      <div class="itemQuantity"></div>
-      <div class="cost"></div>
-    </div>
-    <div class="purchases" id="p3">
-      <img src="syntaxImages/greybeaniethumbnail.jpg">
-      <div class="description"></div>
-      <div class="itemQuantity"></div>
-      <div class="cost"></div>
-    </div>
-    <div class="purchases" id="p4">
-      <img src="syntaxImages/brownbeaniethumbnail.jpg">
-      <div class="description"></div>
-      <div class="itemQuantity"></div>
-      <div class="cost"></div>
-    </div>
-    <div class="purchases" id="p5">
-      <img src="syntaxImages/blacktshirtthumbnail.png">
-      <div class="description"></div>
-      <div class="itemQuantity"></div>
-      <div class="cost"></div>
-    </div>
-    <div class="purchases" id="p6">
-      <img src="syntaxImages/purpletshirtthumbnail.png">
-      <div class="description"></div>
-      <div class="itemQuantity"></div>
-      <div class="cost"></div>
-    </div>
-    <div class="purchases" id="p7">
-      <img src="syntaxImages/greentshirtthumbnail.png">
-      <div class="description"></div>
-      <div class="itemQuantity"></div>
-      <div class="cost"></div>
-    </div>
-    <div class="purchases" id="p8">
-      <img src="syntaxImages/redtshirtthumbnail.png">
-      <div class="description"></div>
-      <div class="itemQuantity"></div>
-      <div class="cost"></div>
-    </div>
-    <div class="purchases" id="p9">
-      <img src="syntaxImages/greenhoodiethumbnail.jpg">
-      <div class="description"></div>
-      <div class="itemQuantity"></div>
-      <div class="cost"></div>
-    </div>
-    <div class="purchases" id="p10">
-      <img src="syntaxImages/purplehoodiethumbnail.jpg">
-      <div class="description"></div>
-      <div class="itemQuantity"></div>
-      <div class="cost"></div>
-    </div>
-    <div class="purchases" id="p11">
-      <img src="syntaxImages/greyhoodiethumbnail.jpg">
-      <div class="description"></div>
-      <div class="itemQuantity"></div>
-      <div class="cost"></div>
-    </div>
-    <div class="purchases" id="p12">
-      <img src="syntaxImages/redhoodthumbnail.jpg">
-      <div class="description"></div>
-      <div class="itemQuantity"></div>
-      <div class="cost"></div>
-    </div>
-    <button id="purchase" onclick="checkout()">Complete Your Purchase</button>
-  </div>
+<div id = "payment">
+<button type="button" id="cash" onclick="showCash()">Cash</button>
+<button type="button" id="card" onclick="showCard()">Credit</button>
+</div>
 
-  <div id="payment">
-    <button type="button" id="cash" onclick="showCash()">Cash</button>
-    <button type="button" id="card" onclick="showCard()">Credit</button>
-  </div>
+<div id="creditOptions">
+<input id = "cardC" = placeholder="Card Number">
+<input id = "expDate" placeholder="Expiration Date">
+<input id = "cvv" placeholder="CVV">
+<button type="button" onclick="pay('creditOptions')">Pay</button>
+</div>
 
-  <div id="creditOptions">
-    <input id="cardC"=p laceholder="Card Number">
-    <input id="expDate" placeholder="Expiration Date">
-    <input id="cvv" placeholder="CVV">
-    <button type="button" onclick="pay">Pay</button>
-  </div>
+<div id="cashMoney">
+<input readonly id = "total" value= "Total">
+<input id = "amountTendered" value = "Amount Tendered">
+<input readonly id = "change" value = "Change" >
+<button type="button" onclick="pay('cashMoney')">Pay</button>
+</div>
 
-  <div id="cashMoney">
-    <input readonly id="total" value="Total">
-    <input id="amountTendered" value="Amount Tendered">
-    <input readonly id="change" value="Change">
-    <button type="button" onclick="pay">Pay</button>
-  </div>
+<div id="receipt">
+<h2>Thank you for your purchase!</h2>
+<img src="Penguin.jpg" id = "goodbye">
+</div>
 
-  <div id="receipt">
-    <h2>Thank you for your purchase!</h2>
-    <img src="Penguin.jpg" id="goodbye">
-  </div>
-
-  <script src="script.js"></script>
-</body>
-
+   <script src="script.js"></script>
+  </body>
 </html>
